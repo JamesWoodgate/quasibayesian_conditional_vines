@@ -1,0 +1,23 @@
+[project]
+name = "quasibayesian-conditional-vines"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JamesWoodgate", email = "woodgatejr@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pyvinecopulib>=1.0.1",
+    "scipy>=1.18.1",
+    "torch>=2.15.0",
+]
+
+[project.scripts]
+quasibayesian-conditional-vines = "quasibayesian_conditional_vines:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
